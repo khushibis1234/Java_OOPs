@@ -1,0 +1,31 @@
+Java OOps Concept
+
+In this section, we will learn about the basics of OOPs. Object-Oriented Programming is a paradigm that provides many concepts, such as Object,class inheritance,polymorphism,abstraction,encapsulation.
+
+Simula is considered the first object-oriented programming language. The programming paradigm where everything is represented as an object is known as a pure object-oriented programming language.
+
+Smalltalk is considered the first truly object-oriented programming language.
+--------------------------------------------
+-----------------------
+
+Apart from these concepts, there are some other terms which are used in Object-Oriented design:
+
+Coupling
+Cohesion
+Association
+Aggregation
+Composition
+------------------------------------------
+-------------------
+
+Advantage of OOPs over Procedure-Oriented Programming Language
+1) OOPs makes development and maintenance easier, whereas, in a procedure-oriented programming language, it is not easy to manage if code grows as project size increases.
+
+2) OOPs provides data hiding, whereas, in a procedure-oriented programming language, global data can be accessed from anywhere.
+
+3) OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.
+
+---------------------------------------------------
+-------------------------
+What is the difference between an object-oriented programming language and object-based programming language?
+Object-based programming language follows all the features of OOPs except Inheritance. JavaScript and VBScript are examples of object-based programming languages.
