@@ -1,0 +1,271 @@
+single class class A
+
+add()
+sub()
+multi()
+div()
+mod()
+
+classMain :
+access method 
+class A {
+    int a = 5;
+    int b = 6;
+
+    void add() {
+       int c= a + b;
+        System.out.println(c);
+
+    }
+    void sub(){
+        int c=a-b;
+        System.out.println(c);
+    }
+    void div(){
+        int c=a/b;
+        System.out.println(c);
+    }
+    void multi(){
+        int c=a*b;
+        System.out.println(c);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        A s=new A();
+        s.add();
+        s.sub();
+        s.div();
+        s.multi();
+    }
+}
+
+-------------------------------------------------------------------------------
+ class A
+add()
+
+class B 
+sub()
+
+class C
+multi()
+
+class D
+div()
+
+class Main 
+mod()
+access method 
+class A{
+    void add(){
+        int a=5;
+        int b=5;
+        System.out.println(a+b);
+    }
+}
+class B{
+    void sub(){
+        int a=4;
+        int b=4;
+        System.out.println(a-b);
+    }
+}
+class C{
+    void multi(){
+        int a=4;
+        int b=3;
+        System.out.println(a*b);
+    }
+}
+class D{
+    void div(){
+        int a=3;
+        int b=9;
+        System.out.println(a/b);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        int f=11;int g=5;
+        System.out.println(f%g);
+        A a=new A();
+        a.add();
+        B s=new B();
+        s.sub();
+        C m=new C();
+        m.multi();
+        D d=new D();
+        d.div();
+
+    }
+}
+
+-------------------------------------------------------------------------------
+class Main 
+
+neon()
+prime()
+perfect()
+Armstrong()
+palindrome()
+factorial()
+Fibonacci()
+
+access method 
+class Main {
+
+    // Method to check Neon Number
+    void neon(int num) {
+        int square = num * num;
+        int sum = 0;
+
+        // Calculate sum of digits of the square
+        while (square > 0) {
+            sum += square % 10;
+            square /= 10;
+        }
+
+        if (sum == num) {
+            System.out.println(num + " is a Neon Number.");
+        } else {
+            System.out.println(num + " is NOT a Neon Number.");
+        }
+    }
+
+    // Method to check Prime Number
+    void prime(int num) {
+        boolean isPrime = true;
+
+        if (num <= 1) {
+            isPrime = false; // Numbers less than or equal to 1 are not prime
+        } else {
+            for (int i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        if (isPrime) {
+            System.out.println(num + " is a Prime Number.");
+        } else {
+            System.out.println(num + " is NOT a Prime Number.");
+        }
+    }
+
+    // Method to check Perfect Number
+    void perfect(int num) {
+        int sum = 0;
+
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0) {
+                sum += i;
+            }
+        }
+
+        if (sum == num) {
+            System.out.println(num + " is a Perfect Number.");
+        } else {
+            System.out.println(num + " is NOT a Perfect Number.");
+        }
+    }
+
+    // Method to check Armstrong Number
+    void Armstrong(int num) {
+        int originalNum = num, sum = 0, digits = 0;
+
+        // Count the number of digits
+        int temp = num;
+        while (temp > 0) {
+            digits++;
+            temp /= 10;
+        }
+
+        // Calculate the sum of digits raised to the power of the number of digits
+        temp = num;
+        while (temp > 0) {
+            int digit = temp % 10;
+            sum += Math.pow(digit, digits);
+            temp /= 10;
+        }
+
+        if (sum == originalNum) {
+            System.out.println(num + " is an Armstrong Number.");
+        } else {
+            System.out.println(num + " is NOT an Armstrong Number.");
+        }
+    }
+
+    // Method to check Palindrome
+    void palindrome(int num) {
+        int originalNum = num, reversedNum = 0;
+
+        // Reverse the number
+        while (num > 0) {
+            int digit = num % 10;
+            reversedNum = reversedNum * 10 + digit;
+            num /= 10;
+        }
+
+        if (reversedNum == originalNum) {
+            System.out.println(originalNum + " is a Palindrome.");
+        } else {
+            System.out.println(originalNum + " is NOT a Palindrome.");
+        }
+    }
+
+    // Method to calculate Factorial
+    void factorial(int num) {
+        long fact = 1;
+
+        for (int i = 1; i <= num; i++) {
+            fact *= i;
+        }
+
+        System.out.println("Factorial of " + num + " is: " + fact);
+    }
+
+    // Method to generate Fibonacci Series
+    void Fibonacci(int n) {
+        int a = 0, b = 1;
+
+        System.out.println("Fibonacci Series up to " + n + " terms:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(a + " ");
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main();
+
+        // Example inputs
+        obj.neon(9);
+        obj.prime(7);
+        obj.perfect(28);
+        obj.Armstrong(153);
+        obj.palindrome(121);
+        obj.factorial(5);
+        obj.Fibonacci(10);
+    }
+}
+
+-------------------------------------------------------------------------------
+class Main 
+
+neon()
+prime()
+perfect()
+Armstrong()
+palindrome()
+factorial()
+Fibonacci()
+
+access method 
+enter string 
+
+neon :neon method call
