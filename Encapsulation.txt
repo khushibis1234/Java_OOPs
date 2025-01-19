@@ -1,0 +1,186 @@
+instance variable :first way constant 
+
+add() : two number addition 
+sub()
+div()
+multi() 
+mod() 
+
+Main class access
+class A{
+    int a;int b;
+    void operation(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+    public int add(){
+        return a+b;
+    }
+    public int sub(){
+        return a-b;
+    }
+    public int div(){
+        return a/b;
+    }
+    public int mul(){
+        return a*b;
+    }
+    public int mod(){
+        return a%b;
+    }
+
+}
+public class Main{
+    public static void main(String[] args){
+        A p=new A();
+        p.operation(10,5);
+        System.out.println(p.add());
+        System.out.println(p.sub());
+        System.out.println(p.div());
+        System.out.println(p.mod());
+        System.out.println(p.mul());
+    }
+    }
+
+
+----------------------------------------------------------------
+instance variable : second way  constant  
+
+add() : two number addition 
+sub()
+div()
+multi() 
+mod() 
+
+Main class access
+class A{
+    int a;int b;
+    void operation(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+    public int add(){
+        return a+b;
+    }
+    public int sub(){
+        return a-b;
+    }
+    public int div(){
+        return a/b;
+    }
+    public int mul(){
+        return a*b;
+    }
+    public int mod(){
+        return a%b;
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        A p=new A();
+        p.operation(10,5);
+        System.out.println(p.add());
+        System.out.println(p.sub());
+        System.out.println(p.div());
+        System.out.println(p.mod());
+        System.out.println(p.mul());
+    }
+ }
+
+-----------------------------------------------------------
+instance variable :second way user input 	 
+add() : 
+sub() :
+div() :
+multi(): 
+mod():
+ 
+Main class access  
+import java.util.Scanner;
+class MathOperations {
+    int a;
+    int b;
+
+    void getInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        a = scanner.nextInt();
+
+        System.out.print("Enter the second number: ");
+        b = scanner.nextInt();
+    }
+
+    public int add() {
+        return a + b;
+    }
+
+    public int sub() {
+        return a - b;
+    }
+
+    public int div() {
+        if (b == 0) {
+            throw new ArithmeticException("Division by zero is not allowed.");
+        }
+        return a / b;
+    }
+    public int multi() {
+        return a * b;
+    }
+    public int mod() {
+        if (b == 0) {
+            throw new ArithmeticException("Modulus by zero is not allowed.");
+        }
+        return a % b;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        MathOperations math = new MathOperations();
+        math.getInput();
+        System.out.println("Addition: " + math.add());
+        System.out.println("Subtraction: " + math.sub());
+
+        try {
+            System.out.println("Division: " + math.div());
+            System.out.println("Modulus: " + math.mod());
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("Multiplication: " + math.multi());
+    }
+}
+
+--------------------------------------------------
+--------------------------------------------------instance variable : third way  constant  
+add() : two number addition 
+sub()
+div()
+multi() 
+mod() 
+
+Main class access
+--------------------------------------------------instance variable :third way user input  	 
+
+add() : two number addition 
+sub()
+div()
+multi() 
+mod() 
+
+Main class access
+-----------------------------------------------------------
+Employe :class
+
+instance variable 
+empname
+efather
+eaddress
+edepartment 
+esalary 
+econtact
+
+want to print all the data through three ways  
+--------------------------------------------------
