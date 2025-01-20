@@ -1,0 +1,130 @@
+getter setter method :
+all primitve data type with String 
+public class Main {
+    private int intValue;
+    private long longValue;
+    private float floatValue; // Corrected spelling to follow Java conventions
+    private short shortValue;
+    private double doubleValue;
+
+      public int getIntValue() {
+        return intValue;
+    }
+
+    public void setIntValue(int intValue) {
+        this.intValue = intValue;
+    }
+
+        public long getLongValue() {
+        return longValue;
+    }
+
+    public void setLongValue(long longValue) { // Fixed parameter type
+        this.longValue = longValue;
+    }
+
+       public float getFloatValue() {
+        return floatValue;
+    }
+
+    public void setFloatValue(float floatValue) { // Corrected method name and added parameter
+        this.floatValue = floatValue;
+    }
+
+      public short getShortValue() {
+        return shortValue;
+    }
+
+    public void setShortValue(short shortValue) { // Added parameter
+        this.shortValue = shortValue;
+    }
+
+       public double getDoubleValue() {
+        return doubleValue;
+    }
+
+    public void setDoubleValue(double doubleValue) { // Added parameter
+        this.doubleValue = doubleValue;
+    }
+
+    public static void main(String[] args) {
+        Main data = new Main();
+
+        // Setting values
+        data.setIntValue(10);
+        data.setLongValue(1000L);
+        data.setFloatValue(5.5f);
+        data.setShortValue((short) 20);
+        data.setDoubleValue(10.5);
+
+        System.out.println("intValue: " + data.getIntValue());
+        System.out.println("longValue: " + data.getLongValue());
+        System.out.println("floatValue: " + data.getFloatValue());
+        System.out.println("shortValue: " + data.getShortValue());
+        System.out.println("doubleValue: " + data.getDoubleValue());
+    }
+}
+
+
+------------------------------------------------------------------
+user input :
+class Student 
+name
+fname
+nmame
+class
+address
+contact 
+roll_no 
+gender 
+marks 
+
+getter setter 
+class Student {
+    // Fields updated to String type for names and address
+    private String name;
+    private String fName; // Father's name
+    private String mName; // Middle name
+    private String address;
+
+    // Getter and Setter for name
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) { // Added parameter
+        this.name = name;
+    }
+
+    // Getter and Setter for fName
+    public String getFName() {
+        return fName;
+    }
+
+    public void setFName(String fName) { // Added parameter
+        this.fName = fName;
+    }
+
+    // Getter and Setter for mName
+    public String getMName() {
+        return mName;
+    }
+
+    public void setMName(String mName) { /
+
+------------------------------------------------------------------
+company 
+
+empname
+eid
+efname
+econtact
+eaddress 
+ealternate_number 
+salary 
+edepartment 
+bankaccountnumber
+post 
+
+getter setter 
+----------------------------------------------------------------
