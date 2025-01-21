@@ -1,0 +1,291 @@
+user input :
+instance variable : constructor value 
+class Student 
+name
+fname
+nmame
+class
+address
+contact 
+roll_no 
+gender 
+marks 
+// Student class
+class Student {
+    // Instance variables
+    private String name;
+    private String fname;  // Father's name
+    private String mname;  // Mother's name
+    private String studentClass; // Class/Grade
+    private String address;
+    private String contact;
+    private int rollNo;
+    private String gender;
+    private double marks;
+
+    // Constructor to initialize all variables
+    public Student(String name, String fname, String mname, String studentClass, String address, 
+                   String contact, int rollNo, String gender, double marks) {
+        this.name = name;
+        this.fname = fname;
+        this.mname = mname;
+        this.studentClass = studentClass;
+        this.address = address;
+        this.contact = contact;
+        this.rollNo = rollNo;
+        this.gender = gender;
+        this.marks = marks;
+    }
+
+    // Method to display student details
+    public void displayDetails() {
+        System.out.println("Student Details:");
+        System.out.println("Name: " + name);
+        System.out.println("Father's Name: " + fname);
+        System.out.println("Mother's Name: " + mname);
+        System.out.println("Class: " + studentClass);
+        System.out.println("Address: " + address);
+        System.out.println("Contact: " + contact);
+        System.out.println("Roll No: " + rollNo);
+        System.out.println("Gender: " + gender);
+        System.out.println("Marks: " + marks);
+    }
+}
+
+// Main class to create and access the Student object
+public class Main {
+    public static void main(String[] args) {
+        // Create a Student object using the constructor
+        Student student = new Student(
+            "John Doe",       // Name
+            "Richard Doe",    // Father's Name
+            "Emily Doe",      // Mother's Name
+            "10th Grade",     // Class
+            "123 Main St",    // Address
+            "123-456-7890",   // Contact
+        
+
+--------------
+instance variable : constructor value 
+company 
+
+empname
+eid
+efname
+econtact
+eaddress 
+ealternate_number 
+salary 
+edepartment 
+bankaccountnumber
+post 
+----------------------------------------------------------------
+class A
+addition :parameterised constructor 
+
+classs Main :access
+class A{
+    public A(int num1,int num2){
+        int sum=num1+num2;
+        System.out.println(sum);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        A obj=new A(10,20);
+    }
+}
+----------------------------------------------------------------
+class A
+addition :parameterised constructor 
+
+class B
+sub :parameterised constructor 
+
+
+class C
+multi :parameterised constructor 
+
+
+class D
+div :parameterised constructor 
+
+classs Main :access
+mod :parameterised constructor
+class A{
+    public A(int num1,int num2){
+        int sum=num1+num2;
+        System.out.println(sum);
+    }
+
+}
+class B{
+    public B(int num1,int num2){
+        int sub=num1-num2;
+        System.out.println(sub);
+    }
+}
+class C{
+    public C(int num1,int num2){
+        int multi =num1*num2;
+        System.out.println(multi);
+    }
+}
+class D{
+    public D(int num1,int num2){
+        int div=num1/num2;
+        System.out.println(div);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        A add=new A(25,5);
+        B sub=new B(3,7);
+        C multi=new C(4,6);
+        D div=new D(4,3);
+    }
+}
+----------------------------------------------------------------
+class A
+method1 :no return and no argument 
+
+class B ex A
+method2:no return and no argument 
+
+class Main :access
+ ----------------------------------------------------------------
+class A
+method1 :no return and  argument 
+
+class B ex A
+method2: return and no argument 
+
+class Main :access
+// Class A with a method that has no return and no arguments
+class A {
+    public void method1() {
+        System.out.println("Method1 from Class A: No return, no arguments");
+    }
+}
+
+// Class B extends A and adds a method that has no arguments but returns a value
+class B extends A {
+    public String method2() {
+        return "Method2 from Class B: Return value with no arguments";
+    }
+}
+
+// Main class to access methods of A and B
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of Class B
+        B objB = new B();
+
+        // Access method1 from Class A through Class B
+        objB.method1();
+
+        // Access method2 from Class B
+        String result = objB.method2();
+        System.out.println(result);
+    }
+}
+
+----------------------------------------------------------------
+class A
+method1 : return and  argument 
+
+class B ex A
+method2: return and no argument 
+
+class Main :access
+// Class A with a method that takes an argument and returns a value
+class A {
+    public int method1(int num) {
+        return num * num; // Example: Returns the square of the input
+    }
+}
+
+// Class B extends A and includes an additional method
+class B extends A {
+    public String method2() {
+        return "Hello from Class B"; // Example: Returns a string
+    }
+}
+
+// Main class to access methods of A and B
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of Class B
+        B objB = new B();
+
+        // Access method1 from Class A through Class B
+        int result = objB.method1(5);
+        System.out.println("Result from method1: " + result);
+
+        // Access method2 from Class B
+        String message = objB.method2();
+        System.out.println("Message from method2: " + message);
+    }
+}
+
+----------------------------------------------------------------
+class A
+getter setter
+
+class B ex A
+getter setter
+
+class Main :access
+// Class A with a private field and its getter and setter methods
+class A {
+    private int valueA;
+
+    // Getter for valueA
+    public int getValueA() {
+        return valueA;
+    }
+
+    // Setter for valueA
+    public void setValueA(int valueA) {
+        this.valueA = valueA;
+    }
+}
+
+// Class B extends A and adds its own private field with getter and setter
+class B extends A {
+    private String valueB;
+
+    // Getter for valueB
+    public String getValueB() {
+        return valueB;
+    }
+
+    // Setter for valueB
+    public void setValueB(String valueB) {
+        this.valueB = valueB;
+    }
+}
+
+// Main class to demonstrate accessing getter and setter methods
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of Class B
+        B objB = new B();
+
+        // Use setter methods to set values
+        objB.setValueA(100); // Setting value in the inherited field
+        objB.setValueB("Hello from Class B"); // Setting value in Class B's field
+
+        // Use getter methods to retrieve values
+        int valueA = objB.getValueA();
+        String valueB = objB.getValueB();
+
+        // Print the retrieved values
+        System.out.println("Value from Class A (valueA): " + valueA);
+        System.out.println("Value from Class B (valueB): " + valueB);
+    }
+}
+
+----------------------------------------------------------------
+
+
