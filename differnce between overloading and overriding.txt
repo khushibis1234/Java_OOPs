@@ -1,0 +1,13 @@
+Java Method Overloading
+
+Method overloading is a feature in Java that allows a class to have more than one method with the same name, provided their parameter lists are different. Itenables methods to perform similar but distinct tasks. Method overloading is a form of compile-time polymorphism, meaning that the compiler determines which method to call based on the method signature (name and parameter list).
+
+class OverloadingExample{    
+static int add(int a,int b){return a+b;}    
+static int add(int a,int b,int c){return a+b+c;}    
+
+}
+
+Method overriding 
+
+method overriding is a fundamental concept in object-oriented programming (OOP) that allows a subclass to provide a specific implementation for a method that is already defined in its superclass. It enables a subclass to inherit the method from the superclass but override it to perform a different task. Method overriding is essential for achieving runtime polymorphism, where the method that gets called is determined by the actual object type at runtime, not the reference type.    
