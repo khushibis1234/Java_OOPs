@@ -1,0 +1,113 @@
+Q1) An abstract class called “Marks” is needed to calculate the percentage of marks earned by students A in three subjects (with each subject out of 100) and student B in four subjects (with each subject out of 100). This class must contain the abstract method “getPercentage,” which two other classes, “A” and “B,” will inherit. The method “getPercentage,” which provides the percentage of students, is shared by classes “A” and “B.” in java
+
+The constructor of class ‘A’ will accept the marks obtained in three subjects as its parameters and the constructor of class ‘B’ will accept the marks obtained in four subjects as its parameters. To test the implementation, objects for both the classes need to be created and the percentage of marks for each student should be printed.
+
+
+
+(PROGRAM)
+
+abstract class Marks {
+    public abstract double getPercentage();
+}
+class A extends Marks {
+    private int subject1, subject2, subject3;
+    public A(int subject1, int subject2, int subject3) {
+        this.subject1 = subject1;
+        this.subject2 = subject2;
+        this.subject3 = subject3;
+    }
+    public double getPercentage() {
+        return (subject1 + subject2 + subject3) / 3.0;
+    }
+}
+class B extends Marks {
+    private int subject1, subject2, subject3, subject4;
+    public B(int subject1, int subject2, int subject3, int subject4) {
+        this.subject1 = subject1;
+        this.subject2 = subject2;
+        this.subject3 = subject3;
+        this.subject4 = subject4;
+    }
+
+    @Override
+    public double getPercentage() {
+        return (subject1 + subject2 + subject3 + subject4) / 4.0;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A studentA = new A(85, 90, 80);
+        System.out.println("Percentage of Student A: " + studentA.getPercentage() + "%");
+
+        B studentB = new B(78, 88, 92, 81);
+        System.out.println("Percentage of Student B: " + studentB.getPercentage() + "%");
+    }
+}
+
+Q2)Write a program in java to define a class Shape which has data member “area  and a member function showArea(). Derive two classes Circle and ‟Rectangle from Shape class. Add appropriate data members and member functions to calculate and display the area of Circle and Rectangle.
+
+// Base class Shape
+class Shape {
+    protected double area;
+
+    // Method to display the area
+    public void showArea() {
+        System.out.println("Area: " + area);
+    }
+}
+
+// Derived class Circle
+class Circle extends Shape {
+    private double radius;
+
+    // Constructor to initialize radius
+    public Circle(double radius) {
+        this.radius = radius;
+        calculateArea(); // Calculate area during initialization
+    }
+
+    // Method to calculate the area of the Circle
+    private void calculateArea() {
+        area = Math.PI * radius * radius;
+    }
+
+    // Override showArea to display Circle's area
+    @Override
+    public void showArea() {
+        System.out.println("Circle Area: " + area);
+    }
+}
+
+// Derived class Rectangle
+class Rectangle extends Shape {
+    private double length, width;
+
+    // Constructor to initialize length and width
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+        calculateArea(); // Calculate area during initialization
+    }
+
+        private void calculateArea() {
+        area = length * width;
+    }
+
+       @Override
+    public void showArea() {
+        System.out.println("Rectangle Area: " + area);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        // Create a Circle object with radius 5
+        Circle circle = new Circle(5);
+        circle.showArea();
+
+        // Create a Rectangle object with length 4 and width 6
+        Rectangle rectangle = new Rectangle(4, 6);
+        rectangle.showArea();
+    }
+}
+
