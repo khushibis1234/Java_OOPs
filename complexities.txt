@@ -1,0 +1,106 @@
+Time complexity :
+->less time with good performance 
+
+three type :
+best case :first time achieved 
+worst case :last time achieved 
+average case :mid achieved 
+
+--------------------------------------------------------------
+->number of execution of the loop 
+three :
+O(n)
+O(n square)
+O(nlogn) 
+--------------------------------------------------------------
+O(n) : 
+->single loop 
+public class TimeComlexity{
+    public static void main(String[] args){
+        //O(n)
+        for(int i=1;i<=5;i++){
+            System.out.print(i+" ");
+        }
+        //O(n)
+        for(int i=1;i<=5;i++){
+            System.out.print(i+" ");
+        }
+        //O(n)
+        for(int i=1;i<=5;i++){
+            System.out.print(i+" ");
+        }
+        //overall time comlexity : O(n) +O(n) +O(n) =>O(3n)
+    } 
+}
+--------------------------------------------------------------
+O(n square ) :
+
+-----------------------------------------------------------------------
+space complexity :
+->how much space consume to creation of code 
+->less variable 
+-----------------------------------------------------------------------
+recursion :call itself 
+
+three part divide :
+1)recursive work 
+2)assume work 
+3)base work 
+
+-----------------------------------------------------------------------
+break :
+->it is used terminate the block 
+
+class A{
+    static void show(){
+        for(int i=1;i<=5;i++){
+            if(i==4){
+                break;
+            }
+            System.out.print(i+" ");
+        }
+        System.out.println("hello ");
+    }
+}
+public class Break1 {
+    public static void main(String[] args) {
+       A.show();
+    }
+}
+
+
+return :
+->it is used to terminate the method 
+
+public class Return1 {
+    static void returnstatement(){
+        System.out.println("upper side");
+        return;
+        //System.out.println("lower side");
+    }
+    public static void main(String[] args){
+        Return1.returnstatement();
+    }
+}
+---------------------------------------------------------------------------
+1 ---> 5 number print 
+public class PrintNum {
+    //print number :
+    public static void printn(int n){
+       if(n==0){
+        return;
+       }
+       printn(n-1);
+       System.out.print(n+" ");
+       
+    }
+    public static void main(String[] args){
+        printn(5);
+    }
+}
+--------------------------------------------------------------------------------
+5 4 3 2 1 
+
+
+
+
