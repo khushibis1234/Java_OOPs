@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main {
+    public static void printSum(int i, int n, int sum) {
+        if (i > n) {  // Base case: if i exceeds n, print the sum
+            System.out.println("Sum: " + sum);
+            return;
+        }
+        printSum(i + 1, n, sum + i);  // Recursive call with updated sum
+    }
+
+    public static void main(String[] args) {
+        printSum(1, 5, 0);  // Start recursion from 1 to 5
+    }
+}
