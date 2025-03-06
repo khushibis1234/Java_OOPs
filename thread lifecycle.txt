@@ -1,0 +1,37 @@
+1) New
+2) Runnable
+3) Blocked
+4) Waiting
+5) Timed Waiting
+6) Terminated
+
+1. New Thread:
+
+Figure: Life Cycle of a thread
+
+ When a new thread is created, it is in the new state.
+ The thread has not yet started to run when thread is in this state.
+ When a thread lies in the new state, it’s code is yet to be run and hasn’t started to
+execute.
+2. Runnable State:
+ A thread that is ready to run is moved to runnable state.
+ In this state, a thread might actually be running or it might be ready run at any instant
+of time.
+
+ It is the responsibility of the thread scheduler to give the thread, time to run.
+ A multi-threaded program allocates a fixed amount of time to each individual thread.
+Each and every thread runs for a short while and then pauses and relinquishes the CPU
+to another thread, so that other threads can get a chance to run. When this happens,
+all such threads that are ready to run, waiting for the CPU and the currently running
+thread lies in runnable state.
+3. Blocked/Waiting state:
+ When a thread is temporarily inactive, then it’s in one of the following states:
+4. Timed Waiting:
+ A thread lies in timed waiting state when it calls a method with a time out parameter.
+ A thread lies in this state until the timeout is completed or until a notification is
+received.
+ For example, when a thread calls sleep or a conditional wait, it is moved to timed
+waiting state.
+5. Terminated State:
+ A thread terminates because of either of the following reasons:
+○ Because it exits normally. 
