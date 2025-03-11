@@ -1,0 +1,28 @@
+Exception handling in Java allows developers to manage runtime errors effectively by using mechanisms like try-catch block, finally block, throwing Exceptions, Custom Exception handling, etc.
+
+An Exception is an unwanted or unexpected event that occurs during the execution of a program (i.e., at runtime) and disrupts the normal flow of the program’s instructions. It occurs when something unexpected things happen, like accessing an invalid index, dividing by zero, or trying to open a file that does not exist.
+
+Invalid user input
+Device failure
+Loss of network connection
+Physical limitations (out-of-disk memory)
+Code errors
+Out of bound
+Null reference
+Type mismatch
+Opening an unavailable file
+Database errors
+Arithmetic errors
+Errors represent irrecoverable condition
+
+Checked exceptions are called compile-time exceptions because these exceptions are checked at compile-time by the compiler. Examples of Checked Exception are listed below:
+
+ClassNotFoundException: Throws when the program tries to load a class at runtime but the class is not found because its not present in the correct location or it is missing from the project.
+InterruptedException: Thrown when a thread is paused and another thread interrupts it.
+IOException: Throws when input/output operation fails
+InstantiationException: Thrown when the program tries to create an object of a class but fails because the class is abstract, an interface, or has no default constructor.
+SQLException: Throws when there’s an error with the database.
+FileNotFoundException: Thrown when the program tries to open a file that doesn’t exist
+
+
+
